@@ -9,7 +9,7 @@ def dias_vividoss():
     mes_nascimento = st.number_input("Mês de Nascimento:", min_value=1, max_value=12)
     ano_nascimento = st.number_input("Ano de Nascimento:", min_value=1)
 
-    if st.button("Calcular"):
+    if st.button("CALCULAR"):
         data_nascimento = datetime(ano_nascimento, mes_nascimento, dia_nascimento)
         data_atual = datetime.now()
         dias_vividos = (data_atual - data_nascimento).days
