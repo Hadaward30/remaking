@@ -2,7 +2,7 @@ import streamlit as st
 
 def calculadora():
 
-    st.title('CALCULADORA')
+    st.title('CALCULADORa')
     operacao = st.selectbox("Selecione a operação", ("Soma", "Subtração", "Multiplicação", "Divisão", "Raiz quadrada"))
 
     if operacao == 'Raiz quadrada':
