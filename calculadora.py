@@ -3,14 +3,14 @@ import streamlit as st
 def calculadora():
 
     st.title('Calculadora')
-    operacao = st.selectbox("Selecione a operação", ("Soma", "Subtração", "Multiplicação", "Divisão", "Raiz quadrada"))
+    operacao = st.selectbox("Selecione a operação", ("Adição", "Subtração", "Multiplicação", "Divisão", "Raiz quadrada"))
 
     if operacao == 'Raiz quadrada':
         num1 = st.number_input('Informe o número que deseja descobrir a raiz quadrada', 0)
         if st.button("CALCULAR"):
             st.success('A raiz quadrada de {} é {:.2f}'.format(num1, num1 ** (1 / 2)))
 
-    elif operacao == 'Soma':
+    elif operacao == 'Adição':
         num1 = st.number_input("Insira o primeiro número")
         num2 = st.number_input("Insira o segundo número")
         resultado = num1 + num2
