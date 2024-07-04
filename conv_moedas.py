@@ -50,7 +50,7 @@ def moedas():
     elif input_opcao == 'EUR':
         if output_opcao == 'BRL':
             valor2 = st.number_input('Informe o valor desejado', 0.0)
-            euro_real = (float(cotacoes['USDBRL']['bid']))
+            euro_real = (float(cotacoes['EURBRL']['bid']))
             resultado2 = euro_real * valor2
 
             if st.button('CONVERTER'):
